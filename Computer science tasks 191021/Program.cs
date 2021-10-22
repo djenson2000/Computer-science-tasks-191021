@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Computer_science_tasks_191021
 {
@@ -7,18 +7,19 @@ namespace Computer_science_tasks_191021
         static void Main(string[] args)
         {
             int a, b, c, d;
-            bool e;
-            e = true;
-            a = 1;
+            a = 0;
             b = 1;
             c = 0;
             Console.WriteLine("{0} , {1}", a, b);
-            while (e == true);
+            while (a < 10000)
+            {
                 c = (a + b);
                 d = (c + b);
                 Console.WriteLine("{0} , {1}", c, d);
                 a = c;
                 b = d;
+            }
+            Console.WriteLine("Done");
             
 
 
